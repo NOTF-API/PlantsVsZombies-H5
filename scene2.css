@@ -1,0 +1,32 @@
+@keyframes view {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-600px);
+  }
+  70% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(-220px);
+  }
+}
+
+#scene2 .background {
+  position: relative;
+  transform: translateX(-220px);
+  width: 1400px;
+  height: 600px;
+  background-image: url("assets/images/background2.jpg");
+  background-size: 1400px 600px;
+  animation: view 5s ease-in-out;
+}
+
+.blocks {
+  position: absolute;
+}
+
+.block {
+  position: absolute;
+}

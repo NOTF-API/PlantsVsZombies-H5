@@ -1,0 +1,158 @@
+#title > * {
+  position: absolute;
+}
+#title .background {
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 800px;
+  height: 550px;
+  background-image: url("assets/reanim/SelectorScreen_BG.jpg");
+  background-size: 800px 550px;
+}
+
+#title .background-right {
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  width: 730px;
+  height: 560px;
+  background-image: url("assets/reanim/SelectorScreen_BG_Right.jpg");
+  -webkit-mask-image: url("assets/reanim/SelectorScreen_BG_Right_P.png");
+}
+
+#title .background-center {
+  z-index: 0;
+  bottom: 0px;
+  left: 80px;
+  width: 720px;
+  height: 350px;
+  background-image: url("assets/reanim/SelectorScreen_BG_Center.jpg");
+  -webkit-mask-image: url("assets/reanim/SelectorScreen_BG_Center_P.png");
+}
+
+#title .background-left {
+  z-index: 2;
+  width: 476px;
+  height: 680px;
+  left: 0;
+  bottom: 0;
+  background-image: url("assets/reanim/SelectorScreen_BG_Left.jpg");
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("assets/reanim/SelectorScreen_BG_Left_P.png");
+  -webkit-mask-repeat: no-repeat;
+}
+
+#title .button {
+  z-index: 20;
+  cursor: pointer;
+}
+
+#title .button.shadow {
+  filter: drop-shadow(5px 5px 1px #00000030);
+}
+
+#title .button.shadow.disabled {
+  filter: brightness(0.6) drop-shadow(5px 5px 1px #00000030);
+}
+
+/* start adventure */
+#title .button-start-adventure {
+  width: 331px;
+  height: 146px;
+  right: 68px;
+  top: 64px;
+  background-image: url("assets/reanim/SelectorScreen_StartAdventure_Button1.png");
+  background-repeat: no-repeat;
+}
+
+#title .button-start-adventure:hover {
+  background-image: url("assets/reanim/SelectorScreen_StartAdventure_Highlight.png");
+}
+
+/* adventure */
+
+#title .button-adventure {
+  width: 330px;
+  height: 120px;
+  right: 80px;
+  top: 100px;
+  background-image: url("assets/reanim/SelectorScreen_Adventure_button.png");
+  background-repeat: no-repeat;
+}
+
+#title .button-adventure:hover {
+  background-image: url("assets/reanim/SelectorScreen_Adventure_highlight.png");
+}
+
+/* mini-games */
+#title .button-mini-games {
+  width: 313px;
+  height: 133px;
+  right: 84px;
+  top: 170px;
+  background-image: url("assets/reanim/SelectorScreen_Survival_button.png");
+  background-repeat: no-repeat;
+}
+
+#title .button-mini-games:hover {
+  background-image: url("assets/reanim/SelectorScreen_Survival_highlight.png");
+}
+
+/* puzzle */
+#title .button-puzzle {
+  width: 286px;
+  height: 122px;
+  right: 106px;
+  top: 258px;
+  background-image: url("assets/reanim/SelectorScreen_Challenges_button.png");
+  background-repeat: no-repeat;
+}
+
+#title .button-puzzle:hover {
+  background-image: url("assets/reanim/SelectorScreen_Challenges_highlight.png");
+}
+
+/* survival */
+#title .button-survival {
+  width: 266px;
+  height: 123px;
+  right: 125px;
+  top: 328px;
+  background-image: url("assets/reanim/SelectorScreen_Vasebreaker_button.png");
+  background-repeat: no-repeat;
+}
+
+#title .button-survival:hover {
+  background-image: url("assets/reanim/SelectorScreen_vasebreaker_highlight.png");
+}
+
+#title .wood-sign1 {
+  z-index: 20;
+  width: 293px;
+  height: 150px;
+  top: -8px;
+  left: 23px;
+  background-image: url("assets/reanim/SelectorScreen_WoodSign1.png");
+  background-repeat: no-repeat;
+}
+
+#title .wood-sign2 {
+  z-index: 21;
+  width: 293px;
+  height: 150px;
+  top: 126px;
+  left: 23px;
+  background-image: url("assets/reanim/SelectorScreen_WoodSign2.png");
+  background-repeat: no-repeat;
+}
+
+#title .wood-sign3 {
+  z-index: 22;
+  width: 293px;
+  height: 150px;
+  top: 180px;
+  left: 23px;
+  background-image: url("assets/reanim/SelectorScreen_WoodSign3.png");
+  background-repeat: no-repeat;
+}
