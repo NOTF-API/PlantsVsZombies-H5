@@ -1,0 +1,54 @@
+@keyframes view {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-600px);
+  }
+  70% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(-220px);
+  }
+}
+
+#scene3 .camera {
+  transform: translateX(-220px);
+  position: relative;
+  width: 800px;
+  height: 600px;
+  animation: view 5s ease-in-out;
+}
+
+#scene3 .background {
+  position: absolute;
+  width: 1400px;
+  height: 600px;
+  background-image: url("assets/images/background3.jpg");
+  background-size: 1400px 600px;
+  z-index: 100;
+}
+
+#scene3 .pool {
+  position: relative;
+}
+
+#scene3 .pool_base {
+  z-index: 101;
+  position: absolute;
+  left: 248px;
+  top: 275px;
+  width: 721px;
+  height: 162px;
+  background-image: url("assets/images/pool_base.jpg");
+  -webkit-mask-image: url("assets/images/pool_base_P.png");
+}
+
+.blocks {
+  position: absolute;
+}
+
+.block {
+  position: absolute;
+}
