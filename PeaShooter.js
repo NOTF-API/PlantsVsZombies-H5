@@ -27,12 +27,23 @@ for (let row = 0; row < 5; row++) {
     blockEl.style.top = `${row * 100}px`;
     blocksEl.appendChild(blockEl);
     const delay = random();
-    blockEl.innerHTML = `<div class="SunShroom">
-            <div class="SunShroom_head" style="animation-delay:${delay}s"></div>
-            <div class="SunShroom_body" style="animation-delay:${delay}s">
-                <div class="SunShroom_face" style="animation-delay:${random()}s"></div>
-            </div>
-            
-        </div>`;
+    blockEl.innerHTML = `<div class="PeaShooter">
+    <div class="PeaShooter_Head" style="animation-delay:${delay}s">
+      <div class="PeaShooter_head"></div>
+      <div class="PeaShooter_mouth"></div>
+      <div class="PeaShooter_sprout"></div>
+      <div class="PeaShooter_stalk_top"></div>
+      <div class="PeaShooter_stalk_bottom"></div>
+
+    </div>
+    <div class="PeaShooter_backleaf">
+      <div class="PeaShooter_backleaf_lefttip"></div>
+      <div class="PeaShooter_backleaf_righttip"></div>
+    </div>
+    <div class="PeaShooter_frontleaf">
+      <div class="PeaShooter_frontleaf_lefttip"></div>
+      <div class="PeaShooter_frontleaf_righttip"></div>
+    </div>
+  </div>`;
   }
 }

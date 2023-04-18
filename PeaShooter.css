@@ -1,0 +1,277 @@
+.block {
+  width: 82px;
+  height: 92px;
+  /* background-color: #fff; */
+  position: absolute;
+  left: 250px;
+  top: 80px;
+}
+
+.PeaShooter {
+  position: absolute;
+  top: -30px;
+}
+
+.PeaShooter > * {
+  position: absolute;
+}
+
+.PeaShooter::after {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #00000042;
+  top: 78px;
+  left: 14px;
+  filter: blur(1px);
+}
+
+@keyframes PeaShooter_Head_shake_animation {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes PeaShooter_Head_nod_animation {
+  0%,
+  100% {
+    scale: 1 1;
+  }
+  50% {
+    scale: 1 0.9;
+  }
+}
+
+.PeaShooter_Head {
+  transform-origin: 20px 100px;
+  animation: PeaShooter_Head_shake_animation 1.4s ease-in-out infinite,
+    PeaShooter_Head_nod_animation 0.7s ease-in-out infinite;
+  z-index: 95;
+}
+
+@keyframes PeaShooter_head_animation {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  55% {
+    transform: scaleY(0.9);
+  }
+}
+
+.PeaShooter_head {
+  animation: PeaShooter_head_animation 0.7s ease-in-out infinite;
+  position: absolute;
+  scale: 0.5;
+  width: 70px;
+  height: 65px;
+  z-index: 101;
+  top: 22px;
+  background-image: url("assets/reanim/PeaShooter_Head.png");
+}
+
+@keyframes PeaShooter_mouth_animation {
+  0%,
+  25%,
+  100% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(2px) scaleY(0.9);
+  }
+}
+
+.PeaShooter_mouth {
+  animation: PeaShooter_mouth_animation 0.7s ease-in-out infinite;
+  scale: 0.5;
+  transform-origin: 17px 49px;
+  position: absolute;
+  width: 35px;
+  height: 49px;
+  z-index: 100;
+  left: 39px;
+  top: 13px;
+  background-image: url("assets/reanim/PeaShooter_mouth.png");
+}
+
+@keyframes PeaShooter_sprout_animation {
+  0%,
+  25%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+.PeaShooter_sprout {
+  animation: PeaShooter_sprout_animation 0.7s ease-in-out infinite;
+  position: absolute;
+  z-index: 90;
+  transform-origin: 18px 0;
+  scale: 0.75;
+  width: 18px;
+  height: 14px;
+  left: 2px;
+  top: 46px;
+  background-image: url("assets/reanim/PeaShooter_sprout.png");
+}
+
+.PeaShooter_stalk_top {
+  position: absolute;
+  z-index: 99;
+  scale: 0.5;
+  /* scale: 0.75; */
+  width: 26px;
+  height: 17px;
+  left: 22px;
+  top: 63px;
+  background-image: url("assets/reanim/PeaShooter_stalk_top.png");
+}
+
+@keyframes PeaShooter_stalk_bottom_animation {
+  0%,
+  100% {
+    scale: 0.5 0.5;
+  }
+  50% {
+    scale: 0.5 0.6;
+  }
+}
+
+.PeaShooter_stalk_bottom {
+  animation: PeaShooter_stalk_bottom_animation 1s linear infinite;
+  position: absolute;
+  transform-origin: 7.5px 0px;
+  z-index: 98;
+  scale: 0.5;
+  width: 15px;
+  height: 19px;
+  left: 29.5px;
+  top: 75px;
+  background-image: url("assets/reanim/PeaShooter_stalk_bottom.png");
+}
+
+@keyframes PeaShooter_backleaf_animation {
+  0%,
+  100% {
+    scale: 0.5 0.5;
+  }
+  50% {
+    scale: 0.5 0.4;
+  }
+}
+
+.PeaShooter_backleaf {
+  animation: PeaShooter_backleaf_animation 0.7s linear infinite;
+  z-index: 90;
+  scale: 0.5;
+  width: 44px;
+  height: 22px;
+  left: 13px;
+  top: 70px;
+  background-image: url("assets/reanim/PeaShooter_backleaf.png");
+}
+
+.PeaShooter_backleaf_lefttip {
+  position: absolute;
+  z-index: 96;
+  width: 15px;
+  height: 12px;
+  left: -5px;
+  top: 1px;
+  background-image: url("assets/reanim/PeaShooter_backleaf_lefttip.png");
+}
+
+.PeaShooter_backleaf_righttip {
+  position: absolute;
+  z-index: 96;
+  width: 12px;
+  height: 10px;
+  left: 37px;
+  top: 0px;
+  background-image: url("assets/reanim/PeaShooter_backleaf_righttip.png");
+}
+
+@keyframes PeaShooter_frontleaf_animation {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.9);
+  }
+}
+
+.PeaShooter_frontleaf {
+  animation: PeaShooter_frontleaf_animation 1s linear infinite;
+  z-index: 99;
+  scale: 0.5;
+  width: 67px;
+  height: 40px;
+  left: 4px;
+  top: 65px;
+  background-image: url("assets/reanim/PeaShooter_frontleaf.png");
+}
+
+@keyframes PeaShooter_frontleaf_lefttip_animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+.PeaShooter_frontleaf_lefttip {
+  animation: PeaShooter_frontleaf_lefttip_animation 1s linear infinite;
+  position: absolute;
+  z-index: 98;
+  width: 22px;
+  height: 29px;
+  left: -6px;
+  top: 13px;
+  transform-origin: 22px 29px;
+  background-image: url("assets/reanim/PeaShooter_frontleaf_lefttip.png");
+}
+
+@keyframes PeaShooter_frontleaf_righttip_animation {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(1.2);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.PeaShooter_frontleaf_righttip {
+  animation: PeaShooter_frontleaf_righttip_animation 1s linear infinite;
+  animation-delay: 0.5s;
+  position: absolute;
+  z-index: 98;
+  width: 15px;
+  height: 31px;
+  left: 60px;
+  top: 2px;
+  transform-origin: 0px 15px;
+  background-image: url("assets/reanim/PeaShooter_frontleaf_righttip.png");
+}
